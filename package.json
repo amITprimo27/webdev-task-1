@@ -1,0 +1,20 @@
+{
+  "name": "webdev-task-1",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
+  "scripts": {
+    "start": "node --env-file=.env.dev index.js",
+    "dev": "nodemon --env-file=.env.dev index.js"
+  },
+  "license": "ISC",
+  "author": "",
+  "dependencies": {
+    "body-parser": "^2.2.0",
+    "express": "^5.1.0",
+    "mongoose": "^8.19.3"
+  },
+  "devDependencies": {
+    "nodemon": "^3.1.10"
+  }
+}
