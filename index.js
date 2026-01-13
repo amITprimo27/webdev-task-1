@@ -17,8 +17,7 @@ db.once("open", () => {
 
 app.use(express.urlencoded({ extended: false }));
 app.use(express.json());
-
-//TODO: Add your routes here
+app.use("/posts", require("./routes/postRoutes"));
 
 const PORT = process.env.PORT;
 
