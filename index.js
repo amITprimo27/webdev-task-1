@@ -18,8 +18,7 @@ db.once("open", () => {
 app.use(express.urlencoded({ extended: false }));
 app.use(express.json());
 
-//TODO: Add your routes here
-
+app.use("/comments", require("./routes/commentRoute"));
 const PORT = process.env.PORT;
 
 app.listen(PORT, () => {
